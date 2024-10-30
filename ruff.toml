@@ -1,0 +1,16 @@
+line-length = 80
+[lint]
+extend-select = [
+    "F",
+    "B",
+    "E",
+    "W",
+    "A",
+    "SIM",
+    "Q",
+    "PL",
+]
+
+ignore = [
+    "PLW1514"
+]

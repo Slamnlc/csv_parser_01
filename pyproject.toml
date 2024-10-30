@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "parse-csv-strange"
+version = "0.1.0"
+description = ""
+authors = ["maksim <maximbirukov77@gmail.com>"]
+readme = "README.md"
+packages = [
+    {include = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tqdm = "^4.66.6"
+inquirerpy = "^0.3.4"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.7.1"
+
+[tool.poetry.scripts]
+parse-csv = "src.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
